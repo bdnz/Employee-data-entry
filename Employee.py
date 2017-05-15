@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 
+#created by Deniz Burak
+
 import sys,os
 import time
 import random
@@ -24,22 +26,29 @@ if idCheck.isdigit():
 		EmpDateOfBirth = input ("Please Enter Employee Date of Birth(MM/DD/YYYY): ")
 		EmpGender = input ("Please enter Employee Gender(M or F): ")
 		print(" ")
+		
 		print ("System will Give random id Number to New Employee...")
 		print ("Please wait...")
 		time.sleep(3)
 		print(" ")
+		
 		randomID = random.randint(11111,99999)
 		print ("Employee ID Number: " + str(randomID))	
 		print(" ")
+		
 		print ("Employee DataBase Entry is on Process...")
 		print(" ")
 		time.sleep(2)
+		
 		print ("Employee Name: " + EmpName)
 		time.sleep(2)
+		
 		print ("Employee Last Name: " + EmpLastName)
 		time.sleep(2)
+		
 		print ("Employee Date of Birth: " +EmpDateOfBirth)
 		time.sleep(2)
+		
 		print ("Employee Gender: " + EmpGender)
 		time.sleep(2)
 		#print ("Employee ID Number:" +str(randomID))
@@ -47,7 +56,7 @@ if idCheck.isdigit():
 		#with open ("EmpDataFile.txt")
 		#print ("Data Entry Process is Successful")
 		#print
-		print
+		print(" ")
 		print ("Have a good day " + idCheck)
 
 		with open ("EmpData.txt", "a") as f:
@@ -63,6 +72,7 @@ if idCheck.isdigit():
 	elif  userInput == "2":
 		print ("Employee Data Book Opening")
 		print (" ")
+		
 		print("Please Wait...")
 		time.sleep(1)
 		print(".")
