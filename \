@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+
+import sys,os
+
+print ("Welcome to Employee Database program")
+print
+
+idCheck = input ("Please Enter your Employement ID Number to start the program: ")
+
+if idCheck.isdigit():
+	print ("Please Select:")
+	print
+	print ("Press 1 to ENTER Employement Data to the Book")
+	print
+	print ("Press 2 to VIEW Empolyement Data Book")
+	userInput = input ("Enter(1,2): ")
+
+	if userInput == "1":
+		print ("Selection 1 is working")
+	elif  userInput == "2":
+		print ("Selection 2 is working")
+	elif userInput != "1" && userInput != "2":
+		print ("Your input was " + userInput)
+	
+
+
+else:
+	print ("System can not recognize the id number: " + idCheck)
+	print
+	print ("**Program Closing")
+	print("Good Bye")
+	print
+	
+
